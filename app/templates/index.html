@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="container">
+	<div class="row">
+	{% for product in products %}
+		<div class='col-sm-6'>
+			<h2>{{ product }}</h2>
+			<p>产品简介</p>
+			<p>
+				<a class="btn btn-primary pull-right" href="#">购买产品</a>
+				<a class="btn btn-primary pull-right" href="#">产品详情</a>
+			</p>
+		</div>
+	{% endfor %}
+</div>
+
+
+</div>
+
+{% endblock %}
